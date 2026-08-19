@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%236366f1'/><stop offset='100%25' stop-color='%23a855f7'/></linearGradient></defs><rect width='100' height='100' rx='25' fill='url(%23g)'/><text x='50' y='70' font-size='60' font-weight='bold' font-family='sans-serif' fill='white' text-anchor='middle'>B</text></svg>">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BRUVA AI — Creative Intelligence</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+             <div class="brand-logo">
+              B
+            </div>
+
+            <div class="brand-name">
+             <h2>BRUVA AI</h2>
+                <p>Creative Intelligence</p>
+            </div>
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            AI Ready
+        </div>
+        <div class="creator-badge">
+             ✦ Created by Behruz
+        </div>
+    </header>
+
+
+    <main class="main-container">
+
+        <section class="hero">
+            <div class="badge">✨ POWERED BY AI</div>
+
+            <h1>
+                Turn your ideas into
+                <span>powerful prompts.</span>
+            </h1>
+
+            <p>
+                Create professional prompts for images, videos and creative AI tools in seconds.
+            </p>
+        </section>
+
+
+        <section class="generator">
+
+            <!-- LEFT SIDE -->
+            <div class="panel input-panel">
+
+                <div class="panel-header">
+                    <div>
+                        <h3>Describe your idea</h3>
+                        <p>Tell us what you want to create.</p>
+                    </div>
+
+                    <span class="number">01</span>
+                </div>
+
+
+                <textarea
+                    id="idea"
+                    placeholder="Example: A futuristic city at night with flying cars..."
+                ></textarea>
+
+
+                <div class="options">
+
+                    <div class="option">
+                        <label>Prompt Type</label>
+
+                        <select id="promptType">
+                            <option value="Image">🖼️ Image</option>
+                            <option value="Video">🎬 Video</option>
+                            <option value="Text">📝 Text</option>
+                        </select>
+                    </div>
+
+
+                    <div class="option">
+                        <label>Style</label>
+
+                        <select id="style">
+                            <option value="Cinematic">🎥 Cinematic</option>
+                            <option value="Realistic">📷 Realistic</option>
+                            <option value="3D Animation">🧊 3D Animation</option>
+                            <option value="Anime">🌸 Anime</option>
+                            <option value="Fantasy">🪄 Fantasy</option>
+                        </select>
+                    </div>
+
+
+                    <div class="option">
+                        <label>Aspect Ratio</label>
+
+                        <select id="ratio">
+                            <option value="16:9">16:9 — Landscape</option>
+                            <option value="9:16">9:16 — Vertical</option>
+                            <option value="1:1">1:1 — Square</option>
+                        </select>
+                    </div>
+
+
+                    <div class="option">
+                        <label>Quality</label>
+
+                        <select id="quality">
+                            <option value="High">⚡ High</option>
+                            <option value="Ultra">🔥 Ultra</option>
+                            <option value="Standard">Standard</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+                <button class="generate-btn" onclick="generatePrompt()">
+                    <span>✦</span>
+                    Generate Prompt
+                    <span>→</span>
+                </button>
+
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+            <div class="panel result-panel">
+
+                <div class="panel-header">
+                    <div>
+                        <h3>Generated Prompt</h3>
+                        <p>Your professional AI prompt will appear here.</p>
+                    </div>
+
+                    <span class="number">02</span>
+                </div>
+
+
+                <div id="resultText" class="result-box">
+
+                    <div class="empty-state">
+                        <div class="empty-icon">✦</div>
+
+                        <h4>Your prompt will appear here</h4>
+
+                        <p>
+                            Describe your idea and click
+                            <strong>Generate Prompt</strong>.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="creator-section">
+
+    <div class="creator-logo">
+        B
+    </div>
+
+    <div class="creator-info">
+        <span class="creator-label">ABOUT THE CREATOR</span>
+
+        <h2>Created by <span>Abdurazzoqov Behruz</span></h2>
+
+        <p>
+            PromptForge AI is a creative AI tool designed and developed
+            by Behruz to help creators turn simple ideas into powerful
+            professional prompts.
+        </p>
+
+        <div class="creator-tags">
+            <span>✦ AI Creator</span>
+            <span>✦ Developer</span>
+            <span>✦ Creative Builder</span>
+        </div>
+    </div>
+
+</section>
+        <section class="features">
+
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <div>
+                    <h4>Fast Generation</h4>
+                    <p>Create prompts in seconds.</p>
+                </div>
+            </div>
+
+
+            <div class="feature">
+                <div class="feature-icon">🎯</div>
+                <div>
+                    <h4>Professional</h4>
+                    <p>Detailed and optimized prompts.</p>
+                </div>
+            </div>
+
+
+            <div class="feature">
+                <div class="feature-icon">🚀</div>
+                <div>
+                    <h4>AI Powered</h4>
+                    <p>Ready for real AI integration.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+   <footer>
+        <p>BRUVA AI | Created by Behruz</p>
+        <span>© 2026 — All rights reserved.</span>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
