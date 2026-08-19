@@ -12,7 +12,7 @@ async function generatePrompt() {
     resultBox.innerText = "Prompt tayyorlanmoqda, kuting...";
 
     try {
-        const response = await fetch('http://localhost:3000/api/generate-prompt', {
+        const response = await fetch('https://bruva-ai.onrender.com/api/generate-prompt', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
